@@ -7,5 +7,8 @@
   <body>
     <h1>Video Streaming</h1>
     <img src="{{ url_for('video_feed') }}">
+    <audio controls>
+      <source src="{{ url_for('audio_feed') }}" type="audio/x-wav;codec=pcm">
+    </audio>
   </body>
 </html>

@@ -28,6 +28,5 @@ class TestCamera(BaseCamera):
             images.append(byte_image)
 
         while True:
-            print("yielding image")
             yield images[int(time()) % 3]
             sleep(1)
